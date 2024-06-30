@@ -1,0 +1,13 @@
+<div>
+    <h1>CONVERSATION</h1>
+    <div>
+        @for(msg of messages; track msg.id) {
+            <p>{{msg.content}}</p>
+        }
+    </div>
+    <form (ngSubmit)="newMessage(MessageForm)" #MessageForm>
+        <input [(ngModel)]="message.message" name="message" type="text"/>
+        <button type="submit">Envoyer</button>
+    </form>
+    <button (click)="deconnexion()">Se déconnecter</button>
+</div>

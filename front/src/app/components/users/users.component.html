@@ -1,0 +1,8 @@
+@for(user of users; track user.id) {
+    @if(user.id != userId && user.id == userConvSelected) {
+        <p class="selected" (click)="setIdUserConversation(user.id)">{{user.name}}</p>   
+    }
+    @else if(user.id != userId) {
+        <p (click)="setIdUserConversation(user.id)">{{user.name}}</p>
+    }
+}

@@ -1,0 +1,21 @@
+<div>
+    <form (ngSubmit)="login(SignInForm)" #SignInForm>
+        <label>Pseudo</label>
+        <input [(ngModel)]="user.name" name="name" type="text"/>
+        <label>Adresse mail</label>
+        <input [(ngModel)]="user.email" name="email" type="text"/>
+        <label>Mot de passe</label>
+        <input [(ngModel)]="user.password" name="password" type="text"/>
+        <button type="submit">Se connecter</button>
+    </form>
+    
+    <form (ngSubmit)="register(SignUpForm)" #SignUpForm>
+        <label>Pseudo</label>
+        <input [(ngModel)]="user.name" name="name" type="text"/>
+        <label>Adresse mail</label>
+        <input [(ngModel)]="user.email" name="email" type="text"/>
+        <label>Mot de passe</label>
+        <input [(ngModel)]="user.password" name="password" type="text"/>
+        <button type="submit">S'inscrire</button>
+    </form>
+</div>

@@ -1,0 +1,6 @@
+@if(isConnected) {
+  <users-list></users-list>
+  <conversation></conversation>
+} @else {
+  <form-contain (isConnected)="handleIsConnected($event)"></form-contain>
+}
