@@ -1,9 +1,9 @@
 Pour lancer le projet en intégralité : 
-cd back/src
-npm run setup
-node server
-cd ../../front
-ng serve
+| cd back/src
+| npm run setup
+| node server
+| cd ../../front
+| ng serve
 
 Requis :
 - Lancer Docker
